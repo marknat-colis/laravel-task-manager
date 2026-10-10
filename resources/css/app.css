@@ -1,0 +1,13 @@
+@import url('https://fonts.bunny.net/css?family=figtree:400,500,600,700,800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] { display: none !important; }
+
+@layer components {
+    .card { @apply rounded-2xl bg-white border border-slate-200/80 shadow-sm; }
+    .field { @apply mt-1 block w-full rounded-xl border-slate-300 text-slate-800 placeholder-slate-400 focus:border-blue-500 focus:ring-blue-500 shadow-sm; }
+    .button-primary { @apply inline-flex items-center justify-center rounded-xl bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 transition; }
+    .button-neutral { @apply inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition; }
+}
